@@ -1,29 +1,29 @@
 # Arithmetic Operations in Python
 # Integers
 
-print('Addition: ', 1 + 2)
-print('Subtraction: ', 2 - 1)
-print('Multiplication: ', 2 * 3)
-print ('Division: ', 4 / 2)                         # Division in python gives floating number
+print('Addition: ', 5+3)
+print('Subtraction: ', 8-4)
+print('Multiplication: ', 10*2)
+print ('Division: ', 4/2)  # Division in python gives floating number
 print('Division: ', 6 / 2)
 print('Division: ', 7 / 2)
 print('Division without the remainder: ', 7 // 2)   # gives without the floating number or without the remaining
-print('Modulus: ', 3 % 2)                           # Gives the remainder
+print('Modulus: ', 5 % 2)                           # Gives the remainder
 print ('Division without the remainder: ', 7 // 3)
-print('Exponential: ', 3 ** 2)                     # it means 3 * 3
+print('Exponential: ', 5 ** 5)       # it means 5*5*5*5*5
 
 # Floating numbers
 print('Floating Number,PI', 3.14)
 print('Floating Number, gravity', 9.81)
 
 # Complex numbers
-print('Complex number: ', 1 + 1j)
+print('Complex number: ', 3 + 5j)
 print('Multiplying complex number: ',(1 + 1j) * (1-1j))
 
 # Declaring the variable at the top first
 
-a = 3 # a is a variable name and 3 is an integer data type
-b = 2 # b is a variable name and 3 is an integer data type
+a = 10 # a is a variable name and 10 is an integer data type
+b = 5 # b is a variable name and 5 is an integer data type
 
 # Arithmetic operations and assigning the result to a variable
 total = a + b
@@ -35,7 +35,7 @@ floor_division = a // b
 exponential = a ** b
 
 # I should have used sum instead of total but sum is a built-in function try to avoid overriding builtin functions
-print(total) # if you don't label your print with some string, you never know from where is  the result is coming
+print('Total: ',total) # if you don't label your print with some string, you never know from where is  the result is coming
 print('a + b = ', total)
 print('a - b = ', diff)
 print('a * b = ', product)
@@ -45,8 +45,8 @@ print('a // b = ', floor_division)
 print('a ** b = ', exponential)
 
 # Declaring values and organizing them together
-num_one = 3
-num_two = 4
+num_one = 10
+num_two = 5
 
 # Arithmetic operations
 total = num_one + num_two
@@ -80,7 +80,7 @@ gravity = 9.81
 weight = mass * gravity
 print(weight, 'N')
 
-print(3 > 2)     # True, because 3 is greater than 2
+print(1 > 2)     # False, because 1 is not greater than 2
 print(3 >= 2)    # True, because 3 is greater than 2
 print(3 < 2)     # False,  because 3 is greater than 2
 print(2 < 3)     # True, because 2 is less than 3
@@ -102,8 +102,9 @@ print('False == False:', False == False)
 print('True and True: ', True and True)
 print('True or False:', True or False)
 
+
 # Another way comparison 
-print('1 is 1', 1 is 1)                   # True - because the data values are the same
+print('1 is 1', 1 is 1)                  # True - because the data values are the same
 print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
 print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
 print('B in Asabeneh', 'B' in 'Asabeneh') # False -there is no uppercase B
