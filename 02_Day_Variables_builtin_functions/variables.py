@@ -1,18 +1,18 @@
 
 # Variables in Python
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+first_name = 'Musbi'
+last_name = 'Jawo'
+country = 'Gambia'
+city = 'Sukuta'
+age = 20
+is_married = False
+skills = ['HTML', 'CSS', 'Bootsrap', 'WordPress', 'Python']
 person_info = {
-    'firstname':'Asabeneh', 
-    'lastname':'Yetayeh', 
-    'country':'Finland',
-    'city':'Helsinki'
+    'firstname':'Musbi', 
+    'lastname':'Jawo', 
+    'country':'Gambia',
+    'city':'Sukuta'
     }
 
 # Printing the values stored in the variables
@@ -30,11 +30,11 @@ print('Person information: ', person_info)
 
 # Declaring multiple variables in one line
 
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+first_name, last_name, country, age, is_married = 'Musbi', 'Jawo', 'Gambia', 20, False
 
 print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+print('First Name:', first_name)
+print('Last Name:', last_name)
+print('Country:', country)
+print('Age:', age)
+print('Is Married:', is_married)
