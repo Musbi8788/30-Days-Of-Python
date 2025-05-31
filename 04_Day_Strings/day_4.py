@@ -249,4 +249,4 @@ print(challenge.startswith('thirty')) # True
 challenge = '30 days of python'
 print(challenge.startswith('thirty')) # False
 
-print("Thanks you it's was a great new things.")
+print("Thanks you it's was a great new things to learned.")
