@@ -1,8 +1,8 @@
 
 # Single line comment
-letter = 'P'                # A string could be a single character or a bunch of texts
-print(letter)               # P
-print(len(letter))          # 1
+letter = 'I\'m a String.'       # A string could be a single character or a bunch of texts
+print(letter)               # I'm a String
+print(len(letter))          # 11
 greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
 print(greeting)             # Hello, World!
 print(len(greeting))        # 13
@@ -10,34 +10,33 @@ sentence = "I hope you are enjoying 30 days of python challenge"
 print(sentence)
 
 # Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
+multiline_string = '''I am a python learner and enjoy learning.
 I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python.'''
+That is why I enjoyed 30 days of python.'''
 print(multiline_string)
 # Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python."""
+multiline_string = """I'm a python developer and I enjoyed learning new stuff.
+"""
 print(multiline_string)
 
 # String Concatenation
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Musbi'
+last_name = 'Jawo'
 space = ' '
 full_name = first_name  +  space + last_name
-print(full_name) # Asabeneh Yetayeh
+print(full_name) # Musbi Jawo
 # Checking length of a string using len() builtin function
-print(len(first_name))  # 8
-print(len(last_name))   # 7
+print(len(first_name))  # 5
+print(len(last_name))   # 4
 print(len(first_name) > len(last_name)) # True
-print(len(full_name)) # 15
+print(len(full_name)) # 9
 
 #### Unpacking characters 
 language = 'Python'
 a,b,c,d,e,f = language # unpacking sequence characters into variables
 print(a) # P
 print(b) # y
-print(c) # t 
+print(c) # t
 print(d) # h
 print(e) # o
 print(f) # n
@@ -73,11 +72,11 @@ print(last_three)   # hon
 
 # Skipping character while splitting Python strings
 language = 'Python'
-pto = language[0:6:2] # 
+pto = language[0::2] # 
 print(pto) # pto
 
 # Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you ?') # line break
+print('I hope every one enjoying the python challenge.\nDo you ? Yes I Do.') # line break
 print('Days\tTopics\tExercises')
 print('Day 1\t3\t5')
 print('Day 2\t3\t5')
@@ -98,12 +97,14 @@ challenge = 'thirty days of python'
 print(challenge.count('y')) # 3
 print(challenge.count('y', 7, 14)) # 1
 print(challenge.count('th')) # 2`
+print(challenge.count('t', 3, 16)) # 1
 
 # endswith(): Checks if a string ends with a specified ending
 
 challenge = 'thirty days of python'
 print(challenge.endswith('on'))   # True
 print(challenge.endswith('tion')) # False
+print(challenge.endswith('thon')) # True
 
 # expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
 
@@ -116,19 +117,20 @@ print(challenge.expandtabs(10)) # 'thirty    days      of        python'
 challenge = 'thirty days of python'
 print(challenge.find('y'))  # 5
 print(challenge.find('th')) # 0
+print(challenge.find('ay')) # 8
 
 # format()	formats string into nicer output    
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
-sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
-print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+first_name = 'Musbi'
+last_name = 'Jawo'
+position = 'Python Developer'
+country = 'The Gambia'
+sentence = 'I am {} {}. I am a {}. I Live in {}.'.format(first_name, last_name, position, country)
+print(sentence) # I am Musbi Jawo. I am a Learner. I live in The Gambia.
 
 radius = 10
 pi = 3.14
 area = pi # radius ## 2
-result = 'The area of circle with {} is {}'.format(str(radius), str(area))
+result = 'The area of circle with {} is {}'.format(radius, pi)
 print(result) # The area of circle with 10 is 314.0
 
 # index(): Returns the index of substring
@@ -158,7 +160,7 @@ num = '123'
 print(num.isalpha())      # False
 
 # isdecimal(): Checks Decimal Characters
-
+print(num.isdecimal())
 challenge = 'thirty days of python'
 print(challenge.find('y'))  # 5
 print(challenge.find('th')) # 0
@@ -168,7 +170,7 @@ print(challenge.find('th')) # 0
 challenge = 'Thirty'
 print(challenge.isdigit()) # False
 challenge = '30'
-print(challenge.digit())   # True
+print(challenge.isdigit())   # True
 
 # isdecimal():Checks decimal characters
 
@@ -221,7 +223,7 @@ print(challenge.strip('y')) # 5
 # replace(): Replaces substring inside
 
 challenge = 'thirty days of python'
-print(challenge.replace('python', 'coding')) # 'thirty days of coding'
+print(challenge.replace('python', 'programming')) # 'thirty days of coding'
 
 # split():Splits String from Left
 
@@ -246,3 +248,5 @@ challenge = 'thirty days of python'
 print(challenge.startswith('thirty')) # True
 challenge = '30 days of python'
 print(challenge.startswith('thirty')) # False
+
+print("Thanks you it's was a great new things.")
