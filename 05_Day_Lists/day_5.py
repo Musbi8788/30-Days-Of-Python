@@ -4,19 +4,19 @@ print(len(empty_list)) # 0
 fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
 vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']      # list of vegetables
 animal_products = ['milk', 'meat', 'butter', 'yoghurt']             # list of animal products
-web_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] # list of web technologies
-countries = ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
+web_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB', 'Flask'] # list of web technologies
+countries = ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway', 'The Gambia', 'Senegal']
 
 # Print the lists and it length
 print('Fruits:', fruits)
-print('Number of fruits:', len(fruits))
+print('Number of fruits:', len(fruits)) # 4
 print('Vegetables:', vegetables)
-print('Number of vegetables:', len(vegetables))
+print('Number of vegetables:', len(vegetables)) # 5
 print('Animal products:',animal_products)
-print('Number of animal products:', len(animal_products))
+print('Number of animal products:', len(animal_products)) # 4
 print('Web technologies:', web_techs)
-print('Number of web technologies:', len(web_techs))
-print('Number of countries:', len(countries))
+print('Number of web technologies:', len(web_techs)) # 8
+print('Number of countries:', len(countries)) # 7
 
 # Modifying list
 
@@ -25,18 +25,18 @@ first_fruit = fruits[0] # we are accessing the first item using its index
 print(first_fruit)      # banana
 second_fruit = fruits[1]
 print(second_fruit)     # orange
-last_fruit = fruits[3]
+last_fruit = fruits[-1]
 print(last_fruit) # lemon
 # Last index
 last_index = len(fruits) - 1
 last_fruit = fruits[last_index]
 
 # Accessing items
-fruits = ['banana', 'orange', 'mango', 'lemon'] 
+fruits = ['banana', 'orange', 'mango', 'lemon', 'apply'] 
 last_fruit = fruits[-1]
 second_last = fruits[-2]
-print(last_fruit)       # lemon
-print(second_last)      # mango
+print(last_fruit)       # applye
+print(second_last)      # lemon
 
 # Slicing items
 fruits = ['banana', 'orange', 'mango', 'lemon'] 
@@ -51,11 +51,13 @@ all_fruits = fruits[-4:] # it returns all the fruits
 # this is also give the same result as the above
 orange_and_mango = fruits[-3:-1] # it does not include the end index
 orange_mango_lemon = fruits[-3:]
+mango_lemon = fruits[-2:-1] 
 
-
+# Add items in a list
 fruits = ['banana', 'orange', 'mango', 'lemon'] 
 fruits[0] = 'Avocado' 
-print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
+fruits[2] = 'pineapple'
+print(fruits)       #  ['avocado', 'orange', 'pineapple', 'mango', 'lemon']
 fruits[1] = 'apple'
 print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
 last_index = len(fruits) - 1
@@ -82,13 +84,15 @@ fruits.insert(2, 'apple') # insert apple between orange and mango
 print(fruits)           # ['banana', 'orange', 'apple', 'mango', 'lemon']
 fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'mango', 'lime','lemon',]
 print(fruits)
+fruits.insert(4, 'pineapple')
 
 # remove
-fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = ['banana', 'orange', 'mango', 'lemon', 'pineapple']
 fruits.remove('banana')
 print(fruits)  # ['orange', 'mango', 'lemon']
 fruits.remove('lemon')
 print(fruits)  # ['orange', 'mango']
+fruits.remove('pineapple')
 
 # pop
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -105,8 +109,8 @@ print(fruits)       # ['orange', 'mango', 'lemon']
 
 del fruits[1]     
 print(fruits)       # ['orange', 'lemon']
-del fruits
-print(fruits)       # This should give: NameError: name 'fruits' is not defined
+# del fruits
+# print(fruits)       # This should give: NameError: name 'fruits' is not defined
 
 # clear
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -148,14 +152,14 @@ fruits.extend(vegetables)
 print('Fruits and vegetables:', fruits )
 
 # count
-fruits = ['banana', 'orange', 'mango', 'lemon']
-print(fruits.count('orange'))   # 1
-ages = [22, 19, 24, 25, 26, 24, 25, 24]
-print(ages.count(24))           # 3
+fruits = ['banana', 'orange', 'mango', 'lemon', 'orange']
+print(fruits.count('orange'))   # 2
+ages = [30, 22, 19, 24,30, 25, 26, 24, 25, 24, 30, 30]
+print(ages.count(30))           # 4
 
 # index
 fruits = ['banana', 'orange', 'mango', 'lemon']
-print(fruits.index('orange'))   # 1
+print(fruits.index('mango'))   # 2
 ages = [22, 19, 24, 25, 26, 24, 25, 24]
 print(ages.index(24)) 
 # Reverse
