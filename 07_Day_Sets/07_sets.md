@@ -107,6 +107,7 @@ print("Does set st contain item3? ", 'item3' in st) # Does set st contain item3?
 ```py
 fruits = {'banana', 'orange', 'mango', 'lemon'}
 print('mango' in fruits ) # True
+print('apple' in fruits) # False
 ```
 
 ### Adding Items to a Set
@@ -119,6 +120,7 @@ Once a set is created we cannot change any items and we can also add additional 
 # syntax
 st = {'item1', 'item2', 'item3', 'item4'}
 st.add('item5')
+st.add('item6)
 ```
 
 **Example:**
